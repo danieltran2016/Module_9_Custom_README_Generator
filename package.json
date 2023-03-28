@@ -1,0 +1,14 @@
+{
+  "name": "module_9_custom_readme_generator",
+  "version": "1.0.0",
+  "description": "danieltran2016/Challenge_9_Custom_README_Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
