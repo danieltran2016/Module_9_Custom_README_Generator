@@ -1,10 +1,10 @@
 
 
-#  **README for README Generator**
+#  **Module 9 README Generator**
 
 ## Description
     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+This is a README generator template using node.js. 
     
 ## Table of Contents 
     
@@ -13,29 +13,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - [Credits](#credits)
 - [License](#license)
 - [Badges](#badges)
-- [Features](#Features)
-- [Tests](#Test)
+- [Features](#features)
+- [Tests](#tests)
     
 ## Installation
   
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+Node.js, package,json by using “npm init” and inquirer by using “npm i inquirer@8.2.4” 
     
 ## Usage
     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+install the required programs, then navigate to the root folder and run "node index", fill out the required information and a README will be Generated.
     
     
-![readme screeenshot](./assets/images/readme.png)
+![readme screen snippet](./assets/images/readme.png)
        
     
 ## Credits
     
-Daniel Tran
+Jeremy (instructor), Madison(TA) and William (TA) for assissting me in learning.
 
 ## Questions
 
-Project created by: [Daniel](https://github.com/danieltran2016)
-You may directly reach my be contacting me at myemailissomething@domain.com.
+Project created by: [Daniel Tran](https://github.com/danieltran2016)
+You may directly reach my be contacting me at danieltran2016@gmail.com.
 
     
 ## License
@@ -71,8 +71,8 @@ SOFTWARE.
     
 ## Features
   
-this allows the users to 
+IT uses node.js to create a README. 
     
 ## Tests
 
-Many tests have been run 
+Many tests have been run

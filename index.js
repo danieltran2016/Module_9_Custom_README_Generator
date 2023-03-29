@@ -1,12 +1,12 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+const inquirer = require('inquirer'); //this calls and requires the program to have inquirer -DT
+const fs = require('fs'); //this calls and requires the program to have fs file system which allows the progam to write files.-DT
 
 inquirer
   .prompt([
     {
-      type: 'input',
-      message: 'Please enter your name',
-      name: 'name',
+      type: 'input', //this is a user typed input -DT
+      message: 'Please enter your name', //this is the text displated to the user -DT
+      name: 'name', //this is the name of the response to be called on later on -DT
     },
     {
       type: 'input',
@@ -34,10 +34,10 @@ inquirer
       name: 'image',
     },
     {
-      type: 'list',
+      type: 'list', //this is a list option for users. -DT
       message: 'What is the file type extension?',
       name: 'file',
-      choices: ['.png','.jpg'],
+      choices: ['.png','.jpg'], //This gives users the options to move the cursor and pick either one. 
     },
     {
       type: 'input',
@@ -71,19 +71,19 @@ inquirer
     },
     
   ])
-  .then(function (answer){
-    console.log('title'+answer.title);
-    console.log('desc'+answer.description);
-    console.log('isntall'+answer.inst);
-    console.log('usage'+answer.usage);
-    console.log('iamge'+answer.image);
-    console.log('alt'+answer.alt);
-    console.log('credits'+answer.credits);
-    console.log('test'+answer.test);
-    console.log('features'+answer.features);
+  .then(function (answer){ 
+    // console.log('title'+answer.title); //these are console logged answers i used to debug and make sure it was storing the answers correctly. -DT
+    // console.log('desc'+answer.description);
+    // console.log('isntall'+answer.inst);
+    // console.log('usage'+answer.usage);
+    // console.log('iamge'+answer.image);
+    // console.log('alt'+answer.alt);
+    // console.log('credits'+answer.credits);
+    // console.log('test'+answer.test);
+    // console.log('features'+answer.features);
     
 
-
+//the variable below stores the template literal inputs in one so its a little cleaner down the road. -DT
     var input = `
 
 #  **${answer.title}**
@@ -99,8 +99,8 @@ ${answer.description}
 - [Credits](#credits)
 - [License](#license)
 - [Badges](#badges)
-- [Features](#Features)
-- [Tests](#Test)
+- [Features](#features)
+- [Tests](#tests)
     
 ## Installation
   
@@ -161,9 +161,8 @@ ${answer.features}
     
 ## Tests
 
-${answer.testsa}`;
+${answer.testsa}`; //had to make tests variable something unique because test by itself was not storing properly. -DT
     
-  fs.writeFile('README.md', input, (err) =>
+  fs.writeFile('README.md', input, (err) => //this creates a new file for the readme and inserts the "input" template literal above, into the file. -DT
    err ? console.error(err) : console.log('Success!')
    )});
-
